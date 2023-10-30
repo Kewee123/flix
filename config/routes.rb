@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :users
+  resources :users 
+  get "signup" => "users#new"
+  
   root "movies#index"
 
   resources :movies do 
